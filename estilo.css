@@ -1,0 +1,309 @@
+*{
+margin:0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body{
+	font-family: 'Josefin Sans', sans-serif;
+
+}
+
+.contenedor{
+	padding: 60px 0;
+	width: 90%;
+	max-width: 1000px;
+	margin: auto;
+	overflow: hidden;
+}
+
+.titulo{
+	color: #fff;
+	font-size: 30px;
+	text-align: center;
+	margin-bottom: 60px;
+
+}
+/*header*/
+header{
+	text-align: center;
+	width: 100%;
+	height: 600px;
+background: #B993D6;  /* fallback for old browsers */
+background: linear-gradient(to right, hsla(220, 36%, 70%, 0.692), hsla(274, 31%, 71%, 0.644)), url(../PROGRAMA/steven.jpg);   /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, hsla(220, 36%, 70%, 0.692), hsla(274, 31%, 71%, 0.644)), url(../PROGRAMA/steven.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ background-size: cover;
+ background-attachment: fixed;
+ position: relative;
+ font-size: 20px;
+}
+.textos-header{
+font-size: 40px;
+color: #fff;
+}
+
+nav{
+	text-align: right;
+	padding: 30px 50px 0 0;
+}
+
+nav > a{
+	color: #fff;
+	font-weight: 300;
+	text-decoration: none;
+	margin-right: 10px;
+
+}
+nav > a:hover{
+	
+	text-decoration: underline ;
+}
+.wave{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	position: absolute;
+
+}
+
+/*Steven*/
+
+.contenedor-Steven{
+	display: flex;
+	justify-content: space-evenly;
+}
+.imagen-Steven{
+	height: 700px;
+	width: 48%;
+}
+.contenedor-Steven .contenedor-acerca{
+
+	width: 48%;
+}
+.contenedor-acerca h3 {
+	margin-bottom: 15px;
+}
+.contenedor-acerca h3 span{
+	background: #4d0686 ;
+	color: #fff;
+	border-radius: 50%;
+	display: inline-block;
+	text-align: center;
+	width: 30px;
+	padding: 5px;
+	margin-right: 5px;
+
+}
+
+.contenedor-acerca p{
+	padding: 0px 0px 30px 15px;
+	font-weight: 300;
+	text-align: justify;
+}
+
+.galeria-port{
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+}
+.imagen-port{
+	width: 24%;
+	margin-bottom: 10px;
+	height: 224px;
+overflow: hidden;
+position: relative;
+cursor: pointer;
+box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+}
+
+.imagen-port > img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	display: block;
+}
+
+.hover-galeria{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	transform: scale(0);
+	background: hsla(273,91%,27%, 0.7); 
+	transition: transform .5s;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.hover-galeria img{
+	width: 50px;
+}
+.hover-galeria p{
+	color: #fff;
+}
+
+.imagen-port:hover .hover-galeria{
+	transform: scale(1);
+}
+/*fusiones*/
+
+.about-gemas{
+	background: fodo-steven.png;
+	background-size: cover;
+	padding-bottom: 30px;  
+}
+
+.gemas-cont{
+	
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.gemas-ind p{
+	color: #F0DF35;
+}
+
+.gemas-ind {
+	
+	width: 28%;
+	text-align: center;
+}
+
+.gemas-ind img{
+width: 90%;
+
+}
+.gemas-ind h3{
+	margin: 10px 0;
+}
+.gemas-ind p{
+	font-weight: 300;
+	text-align: justify;
+}
+
+/*footer*/
+footer{
+	background: #414141;
+	padding: 60px 0 30px 0;
+	margin: auto;
+	overflow: hidden; 
+}
+
+.contenedor-footer{
+	display: flex;
+	width: 90%;
+	justify-content: space-evenly;
+	margin: auto;
+	padding-bottom: 50px;
+	border-bottom: 1px solid #ccc;
+	text-align: center;
+
+}
+
+.content-foo h4{
+	text-align: center;
+}
+.content-foo h4{
+	color: #fff;
+	border-bottom: 3px solid #af20d3;
+	padding-bottom: 5px;
+	margin-bottom: 10px;
+}
+.content-foo p{
+	color: #ccc;
+}
+
+.final{
+	text-align: center;
+	font-size: 24px;
+	margin: 20px 0 0 0;
+	color: #9e9797;
+}
+@media screen and (max-widht:900px){
+	header{
+		background-position: center;
+
+	}
+	.contenedor-Steven{
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.contenedor-steven .contenedor-acerca{
+		width: 90%;
+
+	}
+
+	.imagen-Steven{
+		width: 90%;
+	}
+
+	/*galería*/
+	.imagen-port{
+		width: 44%;
+	}
+	/*fusiones*/
+
+	.Gemas{
+		justify-content: center;
+		flex-direction: column;
+	}
+	.gemas-ind{
+		width: 100%;
+		text-align: center;
+	}
+	.gemas-ind:nth-child(1), .gemas-ind:nth-child(2){
+margin-bottom: 60px;
+	}
+	.gemas-ind img{
+width: 90%;
+	}
+
+}
+
+@media screen and(max-width: 500px){
+	nav{
+		text-align: center;
+		padding: 30px 0 0 0;
+	}
+	nav > a{
+		margin-right: 5px;
+
+	}
+	.textos-header h1{
+		font-size: 35px;
+	}
+
+	.textos-header h2{
+		font-size: 20px;
+	}
+
+	.imagen-Steven{
+		margin-bottom:  60px;
+		width: 99%;
+	}
+	.contenedor-steven .contenido-textos{
+		width: 99%;
+	}
+	/*galería*/
+	.imagen-port{
+		width: 95%;
+	}
+	/*footer*/
+	.contenedor-footer{
+		flex-direction: column;
+		border:none;
+	}
+	.content-foo{
+		margin-bottom: 20px;
+		text-align: center;
+	}
+	.content-foo h4{
+		border-bottom: none; 
+	}
+	.final{
+		font-size: 20px;
+	}
+}
